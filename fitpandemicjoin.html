@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fit Pandemic join</title>
+
+<style>
+body, html {
+  color: #FFF;
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-size: 1.2em;
+  background: linear-gradient(rgba(3, 4, 59), rgba(49, 245, 254));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.text-box {
+  background-color: #04ADFF;
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container {
+  background-color: rgba(0, 0, 0 );
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  
+}
+
+#survey-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin: 18px 0 0 10px;
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: #04ADFF;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: #45F11E;
+}
+</style>
+</head>
+<body>
+    <div class="text-box">
+    <h1 id="title">   JOIN THE FIT PANDEMIC  </h1><hr>
+      <p id="description">Complete the sheet to join the club today!</p>
+	</div>
+	
+	<div class="container">
+      <form id="survey-form" method="GET">
+
+         <div class="labels">
+          <label id="name-label" for="name">* Full Name</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required autofocus></div>
+		  
+		<div class="labels">
+          <label id="name-label" for="Country">* Country</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="text" id="name" name="name" placeholder="Enter your country" required autofocus></div>
+
+         <div class="labels">
+          <label id="email-label" for="email">* Email</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="email" id="email" name="email" placeholder="youremail@email.com" required></div>
+        
+         <div class="labels">
+          <label id="number-label" for="number">* Age</label></div>
+        <div class="input-tab">
+          <input class="input-field" type="number" id="number" name="number" min="1" max="120" placeholder="Enter your age" required></div>
+		
+		
+		<div class="labels">
+		<br>
+          <label>What is your gender?</label></div>
+        <div class="input-tab">
+		<br>
+            <input type="radio" name="radio-button" value="Male">Male<br>
+            <input type="radio" name="radio-button" value="Female">Female<br>
+        </div>
+
+          
+         <div class="labels">
+          <label for="dropdown">How did you hear about us?</label></div>
+        <div class="input-tab">
+          <select id="dropdown" name="site">
+            <option disabled value selected>Select an option</option>
+            <option value="friends">Friends</option>
+            <option value="youtube">Youtube</option>
+            <option value="google">Google</option>
+            <option value="add">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+          </div>
+        
+        <div class="labels">
+          <label>How much do you like Fit Pandemic?</label></div>
+        <div class="input-tab">
+            <input type="radio" name="radio-button" value="amazing">Amazing!<br>
+            <input type="radio" name="radio-button" value="ok">It's ok<br>
+            <input type="radio" name="radio-button" value="suggestion">Needs work<br>
+            <input type="radio" name="radio-button" value="no">Don't like it<br><br>
+        </div>
+        
+        <div class="labels">
+          <label>What is your fitness level?</label></div>
+        <div class="input-tab">
+            <input type="radio" name="radio-button" value="Expert">Expert<br>
+            <input type="radio" name="radio-button" value="Intermediate">Intermediate<br>
+            <input type="radio" name="radio-button" value="Beginner">Beginner<br>
+            <input type="radio" name="radio-button" value="Amature">Amature<br><br>
+        </div>
+        
+        <div class="labels">
+          <label>Who do you work out with?</label></div>
+        <div class="input-tab">
+          <input type="checkbox" name="alone" value="alone">Alone<br>
+          <input type="checkbox" name="friends" value="friend">Friends<br>
+          <input type="checkbox" name="family" value="family">Family<br>
+          <input type="checkbox" name="partner" value="partner">Partner<br>
+        </div>        
+        
+        <div class="labels">
+          <label for="comments">Tell us your suggestions:</label></div>
+        <div class="input-tab">
+          <textarea class="input-field" id="comments" name="comments" rows="10" cols="40" placeholder="Share with us...."></textarea></div>
+        
+        <div class="btn">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+</body>
+</html>
